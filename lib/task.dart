@@ -4,7 +4,6 @@ import 'package:flutter_app/dashboard.dart';
 import 'package:flutter_app/main.adapter.g.m8.dart';
 import 'package:flutter_app/models/independent/tasks.g.m8.dart';
 import 'package:flutter_app/tasks.dart';
-import 'AppLocalizations.dart';
 import 'app.dart';
 import 'drawer.dart';
 
@@ -39,8 +38,6 @@ class _TaskPageState extends State<TaskPage> {
 
   @override
   Widget build(BuildContext context) {
-    var locale = AppLocalizations.of(context);
-
     Future<void> selectFile() async {
       FilePickerResult result = await FilePicker.platform.pickFiles();
       if (result != null) {
@@ -51,7 +48,7 @@ class _TaskPageState extends State<TaskPage> {
     }
 
     return Scaffold(
-      drawer: drawer(),
+      drawer: DrawerMe(),
       resizeToAvoidBottomInset: false,
       floatingActionButton: FloatingActionButton(
         onPressed: () {

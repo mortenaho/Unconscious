@@ -3,8 +3,8 @@ import 'package:flutter_app/tasks.dart';
 
 import 'dashboard.dart';
 
-class drawer extends StatelessWidget {
-  const drawer({Key key}) : super(key: key);
+class DrawerMe extends StatelessWidget {
+  const DrawerMe({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

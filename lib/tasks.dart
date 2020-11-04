@@ -1,8 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_app/dashboard.dart';
-import 'package:flutter_app/main.dart';
 import 'package:flutter_app/models/independent/tasks.g.m8.dart';
 import 'package:flutter_app/task.dart';
 
@@ -47,7 +45,7 @@ class _TasksPageState extends State<TasksPage> {
     return Scaffold(
         // resizeToAvoidBottomInset: false,
         body: Scaffold(
-            drawer: drawer(),
+            drawer: DrawerMe(),
             floatingActionButton: FloatingActionButton(
               onPressed: () {
                 Navigator.push(
