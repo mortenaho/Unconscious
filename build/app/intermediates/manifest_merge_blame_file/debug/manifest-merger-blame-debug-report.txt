@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="29" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->E:\projects\flutter\flutter_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->E:\projects\flutter\flutter_app\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->[:file_picker] E:\projects\flutter\flutter_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+15-->[:file_picker] E:\projects\flutter\flutter_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+16
+17    <queries>
+17-->[:file_picker] E:\projects\flutter\flutter_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-15:15
+18        <intent>
+18-->[:file_picker] E:\projects\flutter\flutter_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:18
+19            <action android:name="android.intent.action.GET_CONTENT" />
+19-->[:file_picker] E:\projects\flutter\flutter_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-72
+19-->[:file_picker] E:\projects\flutter\flutter_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:21-69
+20
+21            <data android:mimeType="*/*" />
+21-->[:file_picker] E:\projects\flutter\flutter_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-44
+21-->[:file_picker] E:\projects\flutter\flutter_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-41
+22        </intent>
+23    </queries>
+24    <!--
+25 io.flutter.app.FlutterApplication is an android.app.Application that
+26         calls FlutterMain.startInitialization(this); in its onCreate method.
+27         In most cases you can leave this as-is, but you if you want to provide
+28         additional functionality it is fine to subclass or reimplement
+29         FlutterApplication and put your custom class here.
+30    -->
+31    <application
+31-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:8:6-32:19
+32        android:name="io.flutter.app.FlutterApplication"
+32-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:9:9-57
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.1.0] C:\Users\Mortenaho\.gradle\caches\transforms-2\files-2.1\b72a67fbb224bd0c7d956b9c88a71b0f\core-1.1.0\AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:icon="@mipmap/ic_launcher"
+35-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:11:9-43
+36        android:label="flutter_app" >
+36-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:10:9-36
+37        <activity
+37-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:12:9-23:20
+38            android:name="com.example.flutter_app.MainActivity"
+38-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:13:13-41
+39            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+39-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:16:13-163
+40            android:hardwareAccelerated="true"
+40-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:17:13-47
+41            android:launchMode="singleTop"
+41-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:14:13-43
+42            android:theme="@style/LaunchTheme"
+42-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:15:13-47
+43            android:windowSoftInputMode="adjustResize" >
+43-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:18:13-55
+44            <intent-filter>
+44-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:19:13-22:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:20:17-68
+45-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:20:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:21:17-76
+47-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:21:27-74
+48            </intent-filter>
+49        </activity>
+50        <!--
+51             Don't delete the meta-data below.
+52             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+53        -->
+54        <meta-data
+54-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:26:9-28:33
+55            android:name="flutterEmbedding"
+55-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:27:13-44
+56            android:value="2" />
+56-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:28:13-30
+57        <meta-data
+57-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:29:13-31:29
+58            android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+58-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:30:5-70
+59            android:value="true" />
+59-->E:\projects\flutter\flutter_app\android\app\src\main\AndroidManifest.xml:31:6-26
+60    </application>
+61
+62</manifest>
